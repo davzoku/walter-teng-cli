@@ -2,6 +2,10 @@
 
 Get to know Walter Teng via npm.
 
+![cover](img/cover.jpg)
+
+see [Walter Teng CLI](https://walterteng.com/walter-teng-cli) for more detailed info.
+
 ## Instructions
 
 To use this CLI, run the following command:
@@ -21,25 +25,25 @@ npm install -g walter-teng
 To execute the CLI:
 
 ```
-wt
+walter-teng
 ```
 
 To access the help instructions
 
 ```
-wt help
+walter help
 ```
 
 To fetch latest posts from [walterteng.com](https://walterteng.com/)
 
 ```
-wt -p
+walter -p
 ```
 
 or
 
 ```
-wt --posts
+walter --posts
 ```
 
 ## References

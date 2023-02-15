@@ -1,16 +1,11 @@
 import chalk from 'chalk';
-import * as dotenv from 'dotenv';
 import { createSpinner } from 'nanospinner';
-import path from 'path';
 import RSSParser from 'rss-parser';
-
-const __dirname = path.resolve();
-dotenv.config({ path: `${__dirname}/./.env` });
-const rssUrl = process.env.RSS_URL;
+import { RSS_URL } from './constants.js';
 
 export default async function getLatestPosts(count) {
   const spinner = createSpinner(`Fetching ${count} latest posts`).start();
-  const posts = await new RSSParser().parseURL(rssUrl);
+  const posts = await new RSSParser().parseURL(RSS_URL);
 
   for (let i = 0; i < count; i += 1) {
     console.log(

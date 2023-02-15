@@ -2,6 +2,7 @@
 import init from './utils/init.js';
 import cli from './utils/cli.js';
 import posts from './utils/posts.js';
+import { POST_NO } from './utils/constants.js';
 
 const { input, flags } = cli;
 
@@ -12,6 +13,6 @@ const { input, flags } = cli;
   }
 
   if (flags.posts) {
-    await posts(5);
+    await posts(POST_NO);
   }
 })();

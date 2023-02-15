@@ -6,7 +6,7 @@ const flags = {
     type: 'boolean',
     default: false,
     alias: 'p',
-    desc: `Latest Posts`,
+    desc: `Get latest posts from walterteng.com`,
   },
   version: {
     type: `boolean`,
@@ -20,7 +20,7 @@ const commands = {
 };
 
 const helpText = meowHelp({
-  name: `wt`,
+  name: `walter`,
   defaults: false,
   flags,
   commands,

@@ -1,12 +1,9 @@
 import welcome from 'cli-welcome';
 import unhandled from 'cli-handle-unhandled';
-import path from 'path';
-import * as dotenv from 'dotenv';
 import * as data from './data.js';
+import { PKG_VERSION } from './constants.js';
 
-const __dirname = path.resolve();
-dotenv.config({ path: `${__dirname}/./.env` });
-const version = process.env.PKG_VERSION;
+const version = PKG_VERSION;
 
 export default function init() {
   unhandled();
